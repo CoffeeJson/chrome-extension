@@ -12,8 +12,7 @@
     },
 
     "permissions": ["tabs", "*://*/*", "http://*/*", "https://*/*", "<all_urls>", "storage"],
-    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
-    ,
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
 
     "web_accessible_resources": [
         "assets/css/bootstrap/*.css", "assets/css/myStyles.css", "assets/css/fonts/*", "assets/js/*.js", "assets/dist/css/bootstrap/*.css", "assets/dist/css/myStyles.css", "assets/dist/css/fonts/*", "assets/dist/js/*.js"

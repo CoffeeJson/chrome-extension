@@ -1,17 +1,19 @@
 {
- "name": "Helperbird",
- "description": "Helper Bird changes the font and style of the website to help with dyslexia by making it easier to read.",
+  "name": "coffee-time",
+  "description": "Not sure what coffee to have in the morning Let us pick for you with over 35 different coffees and growing.",
   "author": "Robert James Gabriel",
-  "dependencies": {},
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1"
+  },
   "devDependencies": {
     "gulp": "*",
     "gulp-less": "*",
     "gulp-minify-css": "*",
     "gulp-uglify": "^1.4.0",
     "gulp-util": "*",
-       "gulp-logger": "*",
-       "gulp-rename": "*"
-
+    "gulp-logger": "*",
+    "gulp-rename": "*"
   },
   "engine": "node >= 0.4.1"
 }

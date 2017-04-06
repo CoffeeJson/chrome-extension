@@ -10,7 +10,6 @@ function sleep(time) {
 new Vue({
 
     el: '#app',
-
     data: {
         coffees: [],
         coffeeTitle: "",
@@ -32,7 +31,7 @@ new Vue({
             this.$http.get('https://raw.githubusercontent.com/RobertJGabriel/coffee-drink-types/master/coffee.json').then(response => {
 
                 this.coffees = JSON.parse(response.body).coffees; // Parse the coffee lists
-                this.numberOfCoffees = JSON.parse(response.body).coffees.length; // 
+                this.numberOfCoffees = JSON.parse(response.body).coffees.length; //
                 var randomNumber = Math.floor(Math.random() * this.numberOfCoffees) + 1;
 
                 this.coffeeTitle = this.coffees[randomNumber].name;

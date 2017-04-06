@@ -5,6 +5,12 @@
 
     <link href="./assets/dist/css/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="./assets/dist/css/bootstrap/material.min.css" rel="stylesheet">
+
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+    </style>
+
+
     <style>
         html,
         body,
@@ -12,11 +18,41 @@
             max-height: 380px;
             min-height: 380px;
             height: 380px;
+            width: 290px;
+            background-color: #fff;
+        }
+
+        .col-sm-6>.row>div {
+            padding: 15px;
+        }
+
+        .col-sm-6>.row>div>h1 {
+            font-size: 3em;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 31px;
+        }
+
+        .col-sm-6>.row>div>h1>span {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+        }
+
+        .col-sm-6>.row>div>p {
+            height: 200px;
+            font-family: 'Montserrat', sans-serif;
+            overflow: auto;
+            margin-bottom: 20px;
+        }
+
+        .col-sm-6>.row>div>a {
+            width: 100%;
+            bottom: 0;
+            color: #fff;
         }
     </style>
 </head>
 
-<body style="width:290px; background-color:#fff;">
+<body>
     <div id="app" class="everything">
 
         <div class="container-fluid">
@@ -24,29 +60,28 @@
                 <div class="col-sm-3"></div>
                 <div class="col-sm-6">
                     <div class="row">
-                        <div style="padding: 15px;">
-                            <h1 style="font-size: 2.5em; margin-bottom: 31px;" v-cloak> You should have a <span style="color: rgb(15, 178, 252);">{{coffeeTitle}}</span></h1>
-                            <p style="font-size: 1.3em;    height: 200px;overflow: auto;" v-cloak>{{coffeeDescription}}</p><br><br><br>
-                            
-                            <a class="btn btn-raised btn-info btn-lg" style="width: 100%; bottom:0;color: #fff;" v-on:click='fetchCoffees'>Gimme another coffee</a>
-
+                        <div style="">
+                            <h1 v-cloak> You should have a <span style="color: rgb(15, 178, 252);">{{coffeeTitle}}</span></h1>
+                            <p v-cloak>{{ coffeeDescription}}</p>
+                            <a class="btn btn-raised btn-info btn-lg" v-on:click='fetchCoffees'>Refresh</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-3"></div>
             </div>
-    
+
 
         </div>
 
     </div>
 
-    <script src="./assets/js/jquery.js"></script>
-    <script src="./assets/js/vue.js"></script>
-    <script src="./assets/js/vue-resouce.js"></script>
 
 
-    <script src="./assets/js/core-functions.js"></script>
+    <script src="./assets/js/vendor/jquery.js"></script>
+    <script src="./assets/js/vendor/vue.js"></script>
+    <script src="./assets/js/vendor/vue-resouce.js"></script>
+    <script src="./assets/js/app/app.js"></script>
+
 </body>
 
 </html>
