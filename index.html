@@ -7,9 +7,8 @@
     <link href="./assets/dist/css/bootstrap/material.min.css" rel="stylesheet">
 
     <style>
-      @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
     </style>
-
 
     <style>
         html,
@@ -18,7 +17,7 @@
             max-height: 380px;
             min-height: 380px;
             height: 380px;
-            width: 290px;
+            width: 370px;
             background-color: #fff;
         }
 
@@ -42,6 +41,7 @@
             font-family: 'Montserrat', sans-serif;
             overflow: auto;
             margin-bottom: 20px;
+            font-size: medium;
         }
 
         .col-sm-6>.row>div>a {
@@ -63,11 +63,12 @@
                         <div style="">
                             <h1 v-cloak> You should have a <span style="color: rgb(15, 178, 252);">{{coffeeTitle}}</span></h1>
                             <p v-cloak>{{ coffeeDescription}}</p>
-                            <a class="btn btn-raised btn-info btn-lg" v-on:click='fetchCoffees'>Refresh</a>
+
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-3"></div>
+                <a class="btn btn-raised btn-info btn-lg"  style="width: 100%;margin: 0;" v-on:click='fetchCoffees'>Refresh</a>
             </div>
 
 
