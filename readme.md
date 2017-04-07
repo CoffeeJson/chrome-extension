@@ -11,7 +11,6 @@ Not sure what coffee to have? Let us pick for you with over 50 different coffees
 
 
 ## Install
---------------
 
 - Download the file locally.
 - Open up Google chrome
@@ -23,7 +22,6 @@ Not sure what coffee to have? Let us pick for you with over 50 different coffees
 
 
 ## Honors
---------------
 
 - 43 daily users
 
