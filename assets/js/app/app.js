@@ -1,4 +1,4 @@
-var coffeeJson = 'https://raw.githubusercontent.com/RobertJGabriel/coffee-drink-types/master/coffee.json';
+var coffeeJson = 'https://raw.githubusercontent.com/CoffeeJson/coffees-json/gh-pages/coffee.json';
 
 function sleep(time) {
     var d1 = new Date().getTime();
