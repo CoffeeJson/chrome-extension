@@ -7,18 +7,30 @@ chalk = require('chalk')
 logger = require('gulp-logger')
 rename = require('gulp-rename')
 concat = require('gulp-concat')
+sass = require('gulp-sass')
+
 
 gulp.task 'css', ->
-    gulp.src('assets/css/*/*')
+    gulp.src('assets/css/bootstrap/*.css')
     .pipe(minifyCSS(keepSpecialComments: 1))
     .pipe(logger(
         before: 'Compressing Css '
         after: 'Compressing finished!'
         extname: '.min.css'
         showChange: true))
+    .pipe(minifyCSS())
     .pipe(rename(suffix: '.min'))
-    .pipe gulp.dest('./assets/dist/css')
+    .pipe gulp.dest('./assets/dist/css/bootstrap')
     return
+
+
+gulp.task 'sass', ->
+  gulp.src('assets/css/sass/*.sass')
+  .pipe(sass().on('error', sass.logError))
+  .pipe(minifyCSS())
+  .pipe(rename(suffix: '.min'))
+  .pipe gulp.dest('./assets/dist/css')
+  return
 
 
 gulp.task 'fonts', ->
@@ -54,6 +66,7 @@ gulp.task 'js', ->
 
 gulp.task 'build', [
     'css'
+    'sass'
     'fonts'
     'js'
 ]

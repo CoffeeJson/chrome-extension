@@ -1,6 +1,6 @@
 {
     "name": "What Coffee should I have?",
-    "version": "3.0.0",
+    "version": "3.0.1",
     "manifest_version": 2,
     "description": "Not sure what coffee to have? Let us pick for you with over 35 different coffees and growing.",
     "browser_action": {

@@ -5,51 +5,12 @@
 
     <link href="./assets/dist/css/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="./assets/dist/css/bootstrap/material.min.css" rel="stylesheet">
+    <link href="./assets/dist/css/style.css" rel="stylesheet">
 
     <style>
         @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
     </style>
 
-    <style>
-        html,
-        body,
-        #app {
-            max-height: 380px;
-            min-height: 380px;
-            height: 380px;
-            width: 370px;
-            background-color: #fff;
-        }
-
-        .col-sm-6>.row>div {
-            padding: 15px;
-        }
-
-        .col-sm-6>.row>div>h1 {
-            font-size: 3em;
-            font-family: 'Montserrat', sans-serif;
-            margin-bottom: 31px;
-        }
-
-        .col-sm-6>.row>div>h1>span {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 400;
-        }
-
-        .col-sm-6>.row>div>p {
-            height: 200px;
-            font-family: 'Montserrat', sans-serif;
-            overflow: auto;
-            margin-bottom: 20px;
-            font-size: medium;
-        }
-
-        .col-sm-6>.row>div>a {
-            width: 100%;
-            bottom: 0;
-            color: #fff;
-        }
-    </style>
 </head>
 
 <body>
@@ -62,13 +23,13 @@
                     <div class="row">
                         <div style="">
                             <h1 v-cloak> You should have a <span style="color: rgb(15, 178, 252);">{{coffeeTitle}}</span></h1>
-                            <p v-cloak>{{ coffeeDescription}}</p>
-
+                            <p class="no"><b>About</b></p>
+                            <p v-cloak class="yes">{{ coffeeDescription}}<span class="number"><b>Number:</b> {{ currentCoffeeNumber}}/{{numberOfCoffees}}</span></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-3"></div>
-                <a class="btn btn-raised btn-info btn-lg"  style="width: 100%;margin: 0;" v-on:click='fetchCoffees'>Refresh</a>
+                <a class="btn btn-raised btn-info btn-lg" v-on:click='fetchCoffees'>Another Coffee</a>
             </div>
 
 
