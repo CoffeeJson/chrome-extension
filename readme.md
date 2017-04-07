@@ -4,13 +4,10 @@
 #About
 Not sure what coffee to have? Let us pick for you with over 35 different coffees
 
-#Features 
+#Features
 1. Picks a random coffee for you to try.
 
 
-
-
-Built by a dyslexic programmer with love <3
 
 ##Install
 --------------
@@ -30,8 +27,6 @@ Built by a dyslexic programmer with love <3
 - 0 daily users
 
 
-##Screen Shots
--------------
+## License
 
-
-![Screenshot 2](https://lh3.googleusercontent.com/rtu0lXd3cIqdTwSkPBgg8o1ouMTNrntL702lVf7iGSO7jelyV55oUIlzg5OjU7C9mh7dkpsSDA=s1280-h800-e365-rw "Screenshot 2")
+MIT © [Robert James Gabriel ](http://robertgabriel.ninja)
