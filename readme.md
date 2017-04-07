@@ -1,15 +1,16 @@
 
-![Screenshot 2](https://lh3.googleusercontent.com/rtu0lXd3cIqdTwSkPBgg8o1ouMTNrntL702lVf7iGSO7jelyV55oUIlzg5OjU7C9mh7dkpsSDA=s1280-h800-e365-rw "Screenshot 2")
+![Screenshot 2](https://raw.githubusercontent.com/CoffeeJson/coffee-chrome-extension-/master/assets/img/screens/screen.png "Screenshot")
 
-#About
-Not sure what coffee to have? Let us pick for you with over 35 different coffees
+# About
+Not sure what coffee to have? Let us pick for you with over 50 different coffees
 
-#Features
+# Features
 1. Picks a random coffee for you to try.
+2. Add more coffee by editing this [json file ](https://github.com/CoffeeJson/coffees-json)
 
 
 
-##Install
+## Install
 --------------
 
 - Download the file locally.
@@ -21,10 +22,10 @@ Not sure what coffee to have? Let us pick for you with over 35 different coffees
 - Pick the coffee-time folder.
 
 
-##Honors
+## Honors
 --------------
 
-- 0 daily users
+- 43 daily users
 
 
 ## License
