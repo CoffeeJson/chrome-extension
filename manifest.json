@@ -1,6 +1,6 @@
 {
     "name": "What Coffee should I have?",
-    "version": "3.0.1",
+    "version": "4.0.0",
     "manifest_version": 2,
     "description": "Not sure what coffee to have? Let us pick for you with over 35 different coffees and growing.",
     "browser_action": {
@@ -15,6 +15,6 @@
     "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
 
     "web_accessible_resources": [
-        "assets/css/bootstrap/*.css", "assets/css/myStyles.css", "assets/css/fonts/*", "assets/js/*.js", "assets/dist/css/bootstrap/*.css", "assets/dist/css/myStyles.css", "assets/dist/css/fonts/*", "assets/dist/js/*.js"
+        "assets/css/bootstrap/*.css", "assets/css/myStyles.css", "assets/css/fonts/*", "assets/js/*.js", "assets/dist/css/bootstrap/*.css", "assets/dist/css/style.min.css", "assets/dist/css/fonts/*", "assets/dist/js/*.js", "assets/dist/css/*.min.css"
     ]
 }

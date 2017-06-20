@@ -61,7 +61,7 @@ gulp.task 'js', ->
         showChange: true))
     .pipe(concat('vendor.min.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('./dist/js/'))
+    .pipe(gulp.dest('./assets/dist/js/'))
     return
 
 gulp.task 'build', [
