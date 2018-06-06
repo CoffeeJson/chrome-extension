@@ -1,47 +1,48 @@
-var coffeeJson = 'https://raw.githubusercontent.com/CoffeeJson/coffees-json/gh-pages/coffee.json';
+var coffeeJson =
+  'https://raw.githubusercontent.com/CoffeeJson/coffees-json/gh-pages/coffee.json'
 
-function sleep(time) {
-    var d1 = new Date().getTime();
-    var d2 = new Date().getTime();
-    while (d2 < d1 + time) {
-        d2 = new Date().getTime();
-    }
-    return;
+function sleep (time) {
+  var d1 = new Date().getTime()
+  var d2 = new Date().getTime()
+  while (d2 < d1 + time) {
+    d2 = new Date().getTime()
+  }
 }
 
 new Vue({
+  el: '#app',
+  data: {
+    coffees: [],
+    coffeeTitle: '',
+    coffeeDescription: '',
+    numberOfCoffees: 0,
+    currentCoffeeNumber: 0
+  },
+  beforeCompile () {
+    sleep(3000)
+  },
 
-    el: '#app',
-    data: {
-        coffees: [],
-        coffeeTitle: "",
-        coffeeDescription: "",
-        numberOfCoffees: 0,
-        currentCoffeeNumber: 0
-    },
-    beforeCompile() {
-        sleep(3000);
-    },
+  mounted: function () {
+    this.fetchCoffees()
+  },
 
-    mounted: function() {
-        this.fetchCoffees();
-    },
-
-    methods: {
-        fetchCoffees: function() {
-            // GET /someUrl
-            this.$http.get(coffeeJson).then(response => {
-
-                this.coffees = JSON.parse(response.body).coffees; // Parse the coffee lists
-                this.numberOfCoffees = this.coffees.length; // Number of Coffees in the list
-                this.currentCoffeeNumber = Math.floor(Math.random() * this.numberOfCoffees); // Gets the list in
-                this.coffeeTitle = this.coffees[this.currentCoffeeNumber].name;
-                this.coffeeDescription = this.coffees[this.currentCoffeeNumber].description;
-
-            }, response => {
-
-            });
-        }
+  methods: {
+    fetchCoffees: function () {
+      // GET /someUrl
+      this.$http.get(coffeeJson).then(
+        response => {
+          this.coffees = JSON.parse(response.body).coffees // Parse the coffee lists
+          this.numberOfCoffees = this.coffees.length // Number of Coffees in the list
+          this.currentCoffeeNumber = Math.floor(
+            Math.random() * this.numberOfCoffees
+          ) // Gets the list in
+          this.coffeeTitle = this.coffees[this.currentCoffeeNumber].name
+          this.coffeeDescription = this.coffees[
+            this.currentCoffeeNumber
+          ].description
+        },
+        response => {}
+      )
     }
-
-});
+  }
+})
